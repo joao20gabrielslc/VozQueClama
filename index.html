@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Voz que Clama no Deserto</title>
+  <meta name="description" content="Igreja Voz que Clama no Deserto: fé, esperança e amor em Cristo Jesus. Confira nossos eventos, mensagens e localização.">
+  <meta name="keywords" content="igreja cristã, voz que clama no deserto, culto, eventos cristãos, Rio de Janeiro">
+  <meta name="author" content="Igreja Voz que Clama no Deserto">
+  <meta name="theme-color" content="#7a681c">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical e Open Graph -->
+  <link rel="canonical" href="https://vozqueclama.com.br">
+  <meta property="og:title" content="Voz que Clama no Deserto">
+  <meta property="og:description" content="Comunidade cristã dedicada a fé, esperança e amor em Cristo Jesus.">
+  <meta property="og:image" content="https://vozqueclama.com.br/LogoVQCD.png">
+  <meta property="og:url" content="https://vozqueclama.com.br">
+  <meta property="og:type" content="website">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" href="LogoVQCD.png" type="image/png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===========================================
+       VARIÁVEIS CSS - SISTEMA DE CORES MELHORADO
+    =========================================== */
+    :root {
+      /* Cores principais (modo claro) - Paleta refinada */
+      --primary-color: #d4af37;
+      --primary-dark: #b8972e;
+      --primary-light: #e6c85a;
+      --primary-ultra-light: #f8f3e0;
+
+      /* Sistema de cores neutras */
+      --text-dark: #222222;
+      --text-medium: #444444;
+      --text-light: #666666;
+      --text-ultra-light: #888888;
+      
+      --bg-light: #fafafa;
+      --bg-lighter: #f5f5f5;
+      --bg-white: #ffffff;
+      --bg-card: #ffffff;
+
+      --white: #ffffff;
+      --black: #000000;
+
+      /* Cores de estado */
+      --success: #27ae60;
+      --warning: #e67e22;
+      --error: #e74c3c;
+      --info: #3498db;
+
+      /* Sistema de sombras refinado */
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 12px 35px rgba(0, 0, 0, 0.15);
+      --shadow-primary: 0 4px 20px rgba(212, 175, 55, 0.25);
+
+      /* Sistema de transições */
+      --transition-fast: 0.2s ease;
+      --transition-normal: 0.3s ease;
+      --transition-slow: 0.4s ease;
+      --transition-bounce: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+      /* Sistema de bordas */
+      --border-radius-sm: 4px;
+      --border-radius-md: 8px;
+      --border-radius-lg: 12px;
+      --border-radius-xl: 16px;
+      --border-radius-pill: 50px;
+
+      /* Tipografia */
+      --font-family: 'Poppins', sans-serif;
+      --font-weight-light: 300;
+      --font-weight-normal: 400;
+      --font-weight-medium: 500;
+      --font-weight-semibold: 600;
+      --font-weight-bold: 700;
+
+      /* Espaçamentos */
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+      --space-xxl: 48px;
+
+      /* Z-index */
+      --z-dropdown: 1000;
+      --z-sticky: 1020;
+      --z-fixed: 1030;
+      --z-modal: 1040;
+      --z-tooltip: 1050;
+    }
+
+    /* Tema Escuro - Contraste e legibilidade melhorados */
+    [data-theme="dark"] {
+      --primary-color: #f1c40f;
+      --primary-dark: #e67e22;
+      --primary-light: #f39c12;
+      --primary-ultra-light: #2d2a1a;
+
+      --text-dark: #f5f5f5;
+      --text-medium: #e0e0e0;
+      --text-light: #b0b0b0;
+      --text-ultra-light: #888888;
+      
+      --bg-light: #0e0e0e;
+      --bg-lighter: #1a1a1a;
+      --bg-white: #1e1e1e;
+      --bg-card: #242424;
+
+      --white: #1e1e1e;
+      --black: #ffffff;
+
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.5);
+      --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.6);
+      --shadow-xl: 0 12px 35px rgba(0, 0, 0, 0.7);
+      --shadow-primary: 0 4px 20px rgba(241, 196, 15, 0.3);
+    }
+
+    /* Detecção automática de tema do sistema */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --primary-color: #f1c40f;
+        --primary-dark: #e67e22;
+        --primary-light: #f39c12;
+        --primary-ultra-light: #2d2a1a;
+
+        --text-dark: #f5f5f5;
+        --text-medium: #e0e0e0;
+        --text-light: #b0b0b0;
+        --text-ultra-light: #888888;
+        
+        --bg-light: #0e0e0e;
+        --bg-lighter: #1a1a1a;
+        --bg-white: #1e1e1e;
+        --bg-card: #242424;
+
+        --white: #1e1e1e;
+        --black: #ffffff;
+
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+        --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.5);
+        --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.6);
+        --shadow-xl: 0 12px 35px rgba(0, 0, 0, 0.7);
+        --shadow-primary: 0 4px 20px rgba(241, 196, 15, 0.3);
+      }
+    }
+
+    /* ===========================================
+       RESET E CONFIGURAÇÕES GERAIS
+    =========================================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-family);
+      font-weight: var(--font-weight-normal);
+      background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-lighter) 100%);
+      color: var(--text-dark);
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color var(--transition-slow), color var(--transition-slow);
+    }
+
+    /* ===========================================
+       TIPOGRAFIA MELHORADA
+    =========================================== */
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.3;
+      margin-bottom: var(--space-md);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: var(--font-weight-bold);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: var(--space-xl);
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(to right, var(--primary-light), var(--primary-color));
+      margin: var(--space-md) auto 0;
+      border-radius: var(--border-radius-pill);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: var(--text-dark);
+      margin-bottom: var(--space-sm);
+    }
+
+    p {
+      margin-bottom: var(--space-md);
+      color: var(--text-medium);
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    a:hover, a:focus {
+      color: var(--primary-dark);
+    }
+
+    /* ===========================================
+       LAYOUT PRINCIPAL
+    =========================================== */
+    header {
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+      padding: var(--space-lg) var(--space-xl);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+      background-size: cover;
+      pointer-events: none;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: url('LogoVQCD.png') center/contain no-repeat;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      transition: transform var(--transition-normal), border-color var(--transition-normal);
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    h1 {
+      color: var(--black);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      text-align: center;
+    }
+
+    /* ===========================================
+       BOTÃO DE TEMA MELHORADO
+    =========================================== */
+    #theme-toggle {
+      background: var(--primary-dark);
+      color: var(--white);
+      border: none;
+      border-radius: 50%;
+      width: 46px;
+      height: 46px;
+      font-size: 1.25rem;
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #theme-toggle::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+      border-radius: 50%;
+    }
+
+    #theme-toggle:hover, #theme-toggle:focus {
+      background: var(--primary-color);
+      transform: scale(1.1) rotate(15deg);
+      box-shadow: var(--shadow-primary);
+      outline: none;
+    }
+
+    /* ===========================================
+       NAVEGAÇÃO MELHORADA
+    =========================================== */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: var(--space-sm) 0;
+      position: sticky;
+      top: 0;
+      z-index: var(--z-sticky);
+      background-color: var(--bg-white);
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-normal);
+    }
+
+    nav.scrolled {
+      padding: var(--space-xs) 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    nav a {
+      color: var(--text-dark);
+      text-decoration: none;
+      padding: var(--space-sm) var(--space-lg);
+      margin: var(--space-xs);
+      font-weight: var(--font-weight-medium);
+      border-radius: var(--border-radius-pill);
+      transition: all var(--transition-normal);
+      min-width: 48px;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    nav a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: all var(--transition-normal);
+      transform: translateX(-50%);
+    }
+
+    nav a:hover, 
+    nav a:focus {
+      color: var(--primary-color);
+      background-color: var(--primary-ultra-light);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    nav a:hover::before,
+    nav a:focus::before {
+      width: 70%;
+    }
+
+    nav a.active {
+      color: var(--primary-color);
+      background-color: var(--primary-ultra-light);
+    }
+
+    nav a.active::before {
+      width: 70%;
+    }
+
+    /* ===========================================
+       CONTEÚDO PRINCIPAL
+    =========================================== */
+    main {
+      padding: var(--space-xxl) var(--space-xl);
+      max-width: 1200px;
+      margin: 0 auto;
+      flex: 1;
+      width: 100%;
+    }
+
+    .content-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .page-intro {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+      color: var(--text-light);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===========================================
+       COMPONENTES DE TEXTO
+    =========================================== */
+    .text-block {
+      width: 100%;
+      padding: var(--space-xl);
+      background-color: var(--bg-card);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-md);
+      border-left: 4px solid var(--primary-color);
+      margin: var(--space-xl) auto;
+      line-height: 1.7;
+      max-width: 65ch;
+      font-size: 1.1rem;
+      transition: all var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .text-block::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--primary-ultra-light) 0%, transparent 100%);
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .text-block > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .text-block:hover {
+      box-shadow: var(--shadow-xl);
+      transform: translateY(-5px);
+      border-left-color: var(--primary-light);
+    }
+
+    /* ===========================================
+       VERSÍCULOS E TOOLTIPS MELHORADOS
+    =========================================== */
+    .versiculo {
+      color: var(--primary-color);
+      cursor: pointer;
+      position: relative;
+      font-weight: var(--font-weight-semibold);
+      transition: all var(--transition-fast);
+      border-bottom: 1px dotted var(--primary-light);
+      padding: 0 2px;
+    }
+
+    .versiculo:hover {
+      color: var(--primary-dark);
+      border-bottom-color: var(--primary-color);
+    }
+
+    .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      background-color: var(--bg-card);
+      color: var(--text-dark);
+      padding: var(--space-md);
+      border-radius: var(--border-radius-md);
+      max-width: 500px;
+      min-width: 300px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      text-align: center;
+      transition: all var(--transition-normal);
+      z-index: var(--z-tooltip);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 8px solid transparent;
+      border-top-color: var(--bg-card);
+    }
+
+    .versiculo:hover .tooltip,
+    .versiculo:focus .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ===========================================
+       TIMELINE MELHORADA
+    =========================================== */
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+      margin: var(--space-xl) auto 0;
+      max-width: 1000px;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--primary-light), var(--primary-color));
+      transform: translateX(-50%);
+      border-radius: var(--border-radius-pill);
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      align-items: center;
+      position: relative;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-text {
+      order: 1;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-img {
+      order: 2;
+    }
+
+    .timeline-item:nth-child(even) .timeline-text {
+      order: 2;
+    }
+
+    .timeline-item:nth-child(even) .timeline-img {
+      order: 1;
+    }
+
+    .timeline-text {
+      padding: var(--space-lg);
+      background-color: var(--bg-card);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-md);
+      border-left: 4px solid var(--primary-color);
+      transition: all var(--transition-normal);
+      position: relative;
+      z-index: 1;
+    }
+
+    .timeline-text::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      background: var(--primary-color);
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-text::before {
+      right: -40px;
+      transform: translateY(-50%);
+    }
+
+    .timeline-item:nth-child(even) .timeline-text::before {
+      left: -40px;
+      transform: translateY(-50%);
+    }
+
+    .timeline-text:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-left-color: var(--primary-light);
+    }
+
+    .timeline-text h3 {
+      margin-bottom: var(--space-sm);
+      color: var(--primary-color);
+    }
+
+    .timeline-img {
+      overflow: hidden;
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-md);
+      transition: all var(--transition-normal);
+      height: 100%;
+      position: relative;
+      background: var(--bg-lighter);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .timeline-img::before {
+      content: 'Carregando...';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--text-light);
+      z-index: 1;
+    }
+
+    .timeline-img.loaded::before {
+      display: none;
+    }
+
+    .timeline-img:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .timeline-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--border-radius-lg);
+      transition: transform 0.5s ease;
+      opacity: 0;
+      animation: fadeIn 0.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .timeline-img img.loaded {
+      opacity: 1;
+    }
+
+    .timeline-img:hover img {
+      transform: scale(1.03);
+    }
+
+    /* ===========================================
+       SEÇÃO DE IGREJAS MELHORADA
+    =========================================== */
+    .igrejas-section, #eventos {
+      background: var(--bg-lighter);
+      padding: var(--space-xxl) var(--space-xl);
+    }
+
+    .filtro-igrejas {
+      display: flex;
+      gap: var(--space-sm);
+      justify-content: center;
+      margin-bottom: var(--space-xl);
+      flex-wrap: wrap;
+    }
+
+    .filtro-btn {
+      padding: var(--space-sm) var(--space-lg);
+      border: 2px solid var(--primary-color);
+      background: transparent;
+      border-radius: var(--border-radius-pill);
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      font-weight: var(--font-weight-medium);
+      min-width: 48px;
+      min-height: 48px;
+      color: var(--text-dark);
+    }
+
+    .filtro-btn.active {
+      background: var(--primary-color);
+      color: var(--white);
+      box-shadow: var(--shadow-primary);
+    }
+
+    .filtro-btn:hover,
+    .filtro-btn:focus {
+      background: var(--primary-dark);
+      color: var(--white);
+      transform: translateY(-2px);
+      outline: none;
+      box-shadow: var(--shadow-primary);
+    }
+
+    .igrejas-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: var(--space-lg);
+    }
+
+    .igreja-card {
+      background: var(--bg-card);
+      border-radius: var(--border-radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .igreja-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .igreja-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-md);
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+      color: var(--white);
+    }
+
+    .destaque-badge {
+      background: var(--black);
+      color: var(--white);
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--border-radius-pill);
+      font-size: 0.8rem;
+      font-weight: var(--font-weight-semibold);
+    }
+
+    .igreja-mapa iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      display: block;
+    }
+
+    .igreja-info {
+      padding: var(--space-md);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-item {
+      display: flex;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+      align-items: flex-start;
+    }
+
+    .info-item i {
+      color: var(--primary-color);
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .info-item-content {
+      flex: 1;
+    }
+
+    .horarios ul, .ministros ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .horarios li, .ministros li {
+      margin-bottom: var(--space-xs);
+      color: var(--text-medium);
+    }
+
+    .rota-btn {
+      width: 100%;
+      padding: var(--space-md);
+      background: var(--primary-color);
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      font-weight: var(--font-weight-semibold);
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      text-decoration: none;
+      border-radius: var(--border-radius-md);
+      box-shadow: var(--shadow-sm);
+      margin-top: auto;
+    }
+
+    .rota-btn:hover,
+    .rota-btn:focus {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      outline: none;
+      box-shadow: var(--shadow-md);
+    }
+
+    .rota-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none !important;
+    }
+
+    /* ===========================================
+       CARROSSEL DE EVENTOS MELHORADO
+    =========================================== */
+    #eventos {
+      text-align: center;
+      position: relative;
+    }
+
+    .carousel-container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+      height: 280px;
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform var(--transition-normal);
+      height: 100%;
+    }
+
+    .card {
+      min-width: 100%;
+      background: var(--bg-card);
+      margin: 0 var(--space-sm);
+      padding: var(--space-xl);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-sm);
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: all var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, var(--primary-light), var(--primary-color));
+    }
+
+    .card h3 {
+      color: var(--primary-color);
+      margin-bottom: var(--space-sm);
+    }
+
+    .card p {
+      margin-bottom: var(--space-sm);
+      color: var(--text-medium);
+    }
+
+    button.prev, 
+    button.next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--primary-color);
+      color: var(--white);
+      border: none;
+      padding: var(--space-sm);
+      cursor: pointer;
+      border-radius: 50%;
+      min-width: 48px;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: var(--z-fixed);
+      transition: all var(--transition-normal);
+      box-shadow: var(--shadow-sm);
+    }
+
+    button.prev { left: var(--space-md); }
+    button.next { right: var(--space-md); }
+
+    button.prev:hover, button.next:hover,
+    button.prev:focus, button.next:focus {
+      transform: translateY(-50%) scale(1.1);
+      background: var(--primary-dark);
+      outline: none;
+      box-shadow: var(--shadow-md);
+    }
+
+    .carousel-dots {
+      position: absolute;
+      bottom: var(--space-md);
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: var(--space-sm);
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background: var(--text-light);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all var(--transition-normal);
+    }
+
+    .dot.active {
+      background: var(--primary-color);
+      transform: scale(1.2);
+    }
+
+    .dot:hover {
+      background: var(--primary-light);
+    }
+
+    /* ===========================================
+       FOOTER MELHORADO
+    =========================================== */
+    footer {
+      background-color: var(--bg-white);
+      color: var(--text-dark);
+      padding: var(--space-xl) var(--space-lg);
+      margin-top: var(--space-xxl);
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-lg);
+    }
+
+    .footer-info p {
+      margin-bottom: var(--space-sm);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .redes-sociais {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .redes-sociais a {
+      color: var(--text-dark);
+      font-size: 1.5rem;
+      transition: all var(--transition-normal);
+      min-width: 48px;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--bg-lighter);
+    }
+
+    .redes-sociais a:hover {
+      color: var(--primary-color);
+      transform: translateY(-3px);
+      background: var(--primary-ultra-light);
+    }
+
+    /* ===========================================
+       BOTÃO VOLTAR AO TOPO MELHORADO
+    =========================================== */
+    .back-to-top {
+      position: fixed;
+      bottom: var(--space-xl);
+      right: var(--space-xl);
+      background: var(--primary-color);
+      color: var(--white);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.25rem;
+      box-shadow: var(--shadow-lg);
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition-normal);
+      z-index: var(--z-fixed);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover,
+    .back-to-top:focus {
+      background: var(--primary-dark);
+      transform: translateY(-5px);
+      outline: none;
+      box-shadow: var(--shadow-xl);
+    }
+
+    /* ===========================================
+       UTILITÁRIOS
+    =========================================== */
+    .color-primary { color: var(--primary-color); }
+    .bg-primary { background: var(--primary-color); }
+    
+    .card-component {
+      background: var(--bg-card);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-md);
+      padding: var(--space-lg);
+      transition: all var(--transition-normal);
+    }
+    
+    .card-component:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      background: var(--primary-color);
+      color: var(--white);
+      padding: var(--space-sm) var(--space-lg);
+      border: none;
+      border-radius: var(--border-radius-pill);
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      font-weight: var(--font-weight-medium);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .text-center { text-align: center; }
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
+
+    .mb-0 { margin-bottom: 0; }
+    .mt-0 { margin-top: 0; }
+
+    /* ===========================================
+       ACESSIBILIDADE E REDUÇÃO DE MOVIMENTO
+    =========================================== */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      
+      .timeline-text:hover,
+      .igreja-card:hover,
+      .timeline-img:hover,
+      button:hover,
+      .rota-btn:hover,
+      .filtro-btn:hover,
+      nav a:hover,
+      .redes-sociais a:hover,
+      .back-to-top:hover,
+      .card-component:hover,
+      .btn-primary:hover,
+      .text-block:hover {
+        transform: none !important;
+      }
+    }
+
+    /* Foco visível para acessibilidade */
+    *:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    /* ===========================================
+       RESPONSIVIDADE MELHORADA
+    =========================================== */
+    @media (max-width: 1024px) {
+      html {
+        font-size: 15px;
+      }
+      
+      h1 {
+        font-size: 2.25rem;
+      }
+      
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+      }
+      
+      .timeline-img {
+        order: -1;
+        max-height: 300px;
+      }
+      
+      .timeline::before {
+        left: 30px;
+      }
+      
+      .timeline-item:nth-child(odd) .timeline-text::before,
+      .timeline-item:nth-child(even) .timeline-text::before {
+        left: -40px;
+        right: auto;
+      }
+      
+      .text-block {
+        padding: var(--space-lg);
+      }
+      
+      nav a {
+        padding: var(--space-sm) var(--space-md);
+        font-size: 0.9rem;
+      }
+      
+      .tooltip {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        transform: none;
+        max-width: none;
+        min-width: auto;
+      }
+      
+      .carousel-container {
+        height: 320px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        font-size: 14px;
+      }
+      
+      header {
+        padding: var(--space-md);
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-sm);
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      main, .igrejas-section, #eventos {
+        padding: var(--space-xl) var(--space-lg);
+      }
+      
+      .igrejas-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+      }
+      
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: var(--space-lg);
+      }
+      
+      .redes-sociais {
+        justify-content: center;
+      }
+
+      .igreja-card {
+        margin-bottom: var(--space-md);
+      }
+
+      .filtro-igrejas {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .filtro-btn {
+        width: 100%;
+        max-width: 250px;
+      }
+      
+      .back-to-top {
+        bottom: var(--space-lg);
+        right: var(--space-lg);
+      }
+    }
+
+    @media (max-width: 600px) {
+      html {
+        font-size: 13px;
+      }
+      
+      h1 {
+        font-size: 1.75rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+      
+      h3 {
+        font-size: 1.25rem;
+      }
+      
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      nav a {
+        width: 100%;
+        max-width: 250px;
+        margin: var(--space-xs) 0;
+      }
+      
+      .text-block {
+        padding: var(--space-md);
+        margin: var(--space-lg) auto;
+      }
+      
+      .carousel-container {
+        height: 350px;
+      }
+      
+      .card {
+        padding: var(--space-lg);
+      }
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: var(--space-lg) var(--space-md);
+      }
+      
+      .text-block {
+        padding: var(--space-md);
+        margin: var(--space-md) auto;
+      }
+      
+      .carousel-container {
+        height: 380px;
+      }
+      
+      button.prev, button.next {
+        padding: var(--space-xs);
+        min-width: 40px;
+        min-height: 40px;
+      }
+      
+      button.prev {
+        left: var(--space-sm);
+      }
+      
+      button.next {
+        right: var(--space-sm);
+      }
+    }
+
+    /* Impressão */
+    @media print {
+      .back-to-top,
+      #theme-toggle,
+      .redes-sociais,
+      .filtro-igrejas,
+      button.prev,
+      button.next,
+      .carousel-dots {
+        display: none !important;
+      }
+      
+      .text-block,
+      .timeline-text,
+      .card,
+      .igreja-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="logo"></a>
+    <h1>Voz que Clama no Deserto</h1>
+    <button id="theme-toggle" class="btn-primary" aria-label="Alternar tema">🌙</button>
+  </header>
+
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#quem-somos">Quem somos</a>
+    <a href="#onde-achar">Onde nos achar</a>
+    <a href="#eventos">Eventos</a>
+  </nav>
+
+  <main id="home" role="region" aria-labelledby="home-heading">
+    <div class="content-wrapper">
+      <p class="page-intro">Aqui você encontrará tudo sobre nossos eventos, mensagens e localização.</p>
+      
+      <div class="text-block" tabindex="0">
+        <p>
+          A Igreja Voz que Clama no Deserto é uma comunidade cristã dedicada a anunciar a Palavra de Deus com amor, fé e esperança. Inspirados em 
+          <span class="versiculo" tabindex="0">
+            Isaías 40:3
+            <span class="tooltip">"Voz do que clama no deserto: Preparai o caminho do Senhor; endireitai no ermo vereda a nosso Deus."</span>
+          </span>,
+          cremos que somos chamados a preparar o caminho do Senhor e proclamar a salvação que há em Cristo Jesus. Nosso propósito é ser luz em meio às trevas, conforme 
+          <span class="versiculo" tabindex="0">
+            Mateus 5:14-16
+            <span class="tooltip">"Vós sois a luz do mundo; não se pode esconder uma cidade edificada sobre um monte; nem se acende uma candeia e se coloca debaixo do alqueire, mas no velador, e dá luz a todos que estão na casa. Assim brilhe a vossa luz diante dos homens..."</span>
+          </span>,
+          acolhendo cada pessoa com o amor de Deus, como está escrito em 
+          <span class="versiculo" tabindex="0">
+            João 13:34-35
+            <span class="tooltip">"Um novo mandamento vos dou: que vos ameis uns aos outros; assim como eu vos amei, que também vos ameis uns aos outros. Nisto todos conhecerão que sois meus discípulos, se tiverdes amor uns aos outros."</span>
+          </span>,
+          e ensinando a viver segundo os princípios da Sua Palavra, como está escrito em 
+          <span class="versiculo" tabindex="0">
+            2 Timóteo 3:16-17
+            <span class="tooltip">"Toda a Escritura é divinamente inspirada, e proveitosa para ensinar, para repreender, para corrigir, para instruir em justiça; para que o homem de Deus seja perfeito, e perfeitamente preparado para toda boa obra."</span>
+          </span>.
+          Aqui, cada coração é convidado a experimentar transformação e vida abundante, conforme a promessa de Jesus em 
+          <span class="versiculo" tabindex="0">
+            João 10:10
+            <span class="tooltip">"O ladrão não vem senão a roubar, a matar, e a destruir; eu vim para que tenham vida, e a tenham com abundância."</span>
+          </span>.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <section id="quem-somos" role="region" aria-labelledby="quem-somos-heading">
+    <div class="content-wrapper">
+      <h2 id="quem-somos-heading">Nossa História</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-text">
+            <h3>O Começo</h3>
+            <p>Seis pessoas reunidas em uma pequena sala, movidas por fé e amor a Deus.</p>
+          </div>
+          <div class="timeline-img">
+            <img src="foto-comeco.jpg" alt="Primeiras reuniões da igreja em 2010 com 6 membros fundadores" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-text">
+            <h3>Crescimento</h3>
+            <p>Mais famílias chegaram, e o espaço já não comportava todos.</p>
+          </div>
+          <div class="timeline-img">
+            <img src="foto-crescimento.jpg" alt="Culto com mais pessoas mostrando o crescimento da congregação" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-text">
+            <h3>Segunda Igreja</h3>
+            <p>Um novo templo foi inaugurado para receber a crescente comunidade.</p>
+          </div>
+          <div class="timeline-img">
+            <img src="foto-segunda.jpg" alt="Segunda igreja construída em 2015" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-text">
+            <h3>Terceira Igreja</h3>
+            <p>Expansão para alcançar novas regiões e famílias.</p>
+          </div>
+          <div class="timeline-img">
+            <img src="foto-terceira.jpg" alt="Terceira igreja inaugurada em 2018" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-text">
+            <h3>Quarta Igreja</h3>
+            <p>Abertura de mais um templo para fortalecer a missão.</p>
+          </div>
+          <div class="timeline-img">
+            <img src="foto-quarta.jpg" alt="Quarta igreja aberta em 2021" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-text">
+            <h3>Hoje</h3>
+            <p>Mais de 500 membros, uma família unida para servir a Cristo e à comunidade.</p>
+          </div>
+          <div class="timeline-img">
+            <img src="foto-hoje.jpg" alt="Igreja atual com todos os membros reunidos" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="onde-achar" class="igrejas-section" role="region" aria-labelledby="onde-achar-heading">
+    <div class="content-wrapper">
+      <h2 id="onde-achar-heading">Nossas Igrejas</h2>
+      
+      <div class="filtro-igrejas">
+        <button class="filtro-btn active" data-igreja="todos">Todos</button>
+        <button class="filtro-btn" data-igreja="matriz">Matriz</button>
+        <button class="filtro-btn" data-igreja="borel">Filial Borel</button>
+        <button class="filtro-btn" data-igreja="formiga">Filial Formiga</button>
+        <button class="filtro-btn" data-igreja="aterro">Filial Aterro</button>
+      </div>
+
+      <div class="igrejas-container">
+        <!-- Cards serão gerados pelo JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <section id="eventos" role="region" aria-labelledby="eventos-heading">
+    <h2 id="eventos-heading">Próximos Eventos</h2>
+    <div class="carousel-container">
+      <button class="prev" aria-label="Evento anterior">&#10094;</button>
+      <div class="carousel">
+        <div class="card">
+          <h3>Congresso dos Jovens</h3>
+          <p>29 e 30 de Novembro - 19h</p>
+          <p>Um culto especial liderado pela nossa Juventude.</p>
+        </div>
+        <div class="card">
+          <h3>Culto das Mulheres</h3>
+          <p>23 de Novembro - 19h</p>
+          <p>Noite inteira de clamor e busca pela presença de Deus.</p>
+        </div>
+        <div class="card">
+          <h3>Escola Bíblica</h3>
+          <p>Todo domingo - 17h</p>
+          <p>Estudo da Palavra.</p>
+        </div>
+        <div class="card">
+          <h3>Culto de Ano Novo</h3>
+          <p>31 de Dezembro - 22h</p>
+          <p>Celebração de virada com louvor e oração.</p>
+        </div>
+      </div>
+      <button class="next" aria-label="Próximo evento">&#10095;</button>
+      <div class="carousel-dots"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p>📍 Rua Max Fleiuss 36, Rio de Janeiro, RJ</p>
+        <p>📞 +55 (21) 97608-6029</p>
+        <p>✉️ vozqueclama@gmail.com</p>
+      </div>
+      <div class="redes-sociais">
+        <a href="https://www.facebook.com/VozQueClamanoDesertoMatriz" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/vozqueclamanodeserto.of/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5521976086029" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Voltar ao topo">↑</a>
+
+  <script>
+    // JavaScript permanece o mesmo, apenas o CSS foi melhorado
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+
+    // Carregar tema salvo ou detectar prefers-color-scheme
+    let savedTheme = localStorage.getItem('theme');
+    if (!savedTheme) {
+      savedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    root.setAttribute('data-theme', savedTheme);
+    toggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+    // Alternar tema com transição
+    toggle.addEventListener('click', () => {
+      root.style.transition = 'background 0.3s ease, color 0.3s ease';
+      const currentTheme = root.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      toggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+    });
+
+    // Dados completos das igrejas
+    const igrejas = [
+      {
+        id: "matriz",
+        nome: "Igreja Matriz",
+        endereco: "Rua Max Fleiuss 36, Rocha, Rio de Janeiro - RJ",
+        horarios: {
+          domingo: ["17h (Escola Bíblica)", "18h30 (Culto)"],
+          terça: ["19h30 (Culto)"],
+          quinta: ["19h30 (Culto)"]
+        },
+        ministros: ["Pr. Jhonatan Souto", "Missionária Gabriele"],
+        mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.328662060345!2d-43.17986892544139!3d-22.901539637894983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5e6a1b5a5d%3A0x3a3e3a1a1a1a1a1!2sRua%20Max%20Fleiuss%2C%2036!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+      },
+      {
+        id: "borel",
+        nome: "Filial Borel",
+        endereco: "Estrada da Independência, 73 - Tijuca, Rio de Janeiro - RJ",
+        horarios: {
+          domingo: ["17h (Escola Bíblica)", "18h30 (Culto)"],
+          terça: ["19h (Culto)"],
+          sexta: ["19h (Culto)"]
+        },
+        ministros: ["Pr. Vagner Cosme", "Missionária Juliana"],
+        mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.227014189!2d-43.2547103!3d-22.9385859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd601cb9f8f27%3A0x86af850c7de483e2!2sEstr.%20da%20Independ%C3%AAncia%2C%2073!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+      },
+      {
+        id: "formiga",
+        nome: "Filial Formiga",
+        endereco: "Rua Castelnuovo (Castelo Novo), 337 - Morro da Formiga, Tijuca, RJ",
+        horarios: { domingo: ["17h (Escola Bíblica)", "18h30 (Culto)"], quarta: ["19h (Culto)"], sexta: ["19h (Culto)"] },
+        ministros: ["Ev. Tarcísio Oliveira", "Mss. Juliana Luna"],
+        mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2899!2d-43.2417268!3d-22.925184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981e8b0b0e5a3%3A0x8c0e76e0aff9a86f!2sR.%20Castelnuovo%2C%20337%20-%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1733251234567!5m2!1spt-BR!2sbr"
+      },
+      {
+        id: "aterro",
+        nome: "Filial Aterro",
+        endereco: "Rua Santa Carolina, 65-45 - Tijuca, Rio de Janeiro - RJ",
+        horarios: { domingo: ["17h (Escola Bíblica)", "18h30 (Culto)"], quarta: ["19h (Culto)"], sexta: ["19h (Culto)"] },
+        ministros: ["Pr. Vitor", "Missionária Soraia"],
+        mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.3111!2d-43.226543!3d-22.918765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981e8b0b0e5a3%3A0x9f5e8e8e8e8e8e8e!2sR.%20Santa%20Carolina%2C%2065-45%20-%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1733251234567!5m2!1spt-BR!2sbr"
+      }
+    ];
+
+    function renderizarIgrejas(filtro = "todos") {
+      const container = document.querySelector('.igrejas-container');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const igrejasParaMostrar = filtro === "todos" ? igrejas : igrejas.filter(igreja => igreja.id === filtro);
+
+      igrejasParaMostrar.forEach(igreja => {
+        let horariosHTML = '';
+        for (const [dia, horarios] of Object.entries(igreja.horarios)) {
+          horariosHTML += `<li>${dia.charAt(0).toUpperCase() + dia.slice(1)}: ${horarios.join(' e ')}</li>`;
+        }
+
+        const ministrosHTML = igreja.ministros.map(ministro => `<li>${ministro}</li>`).join('');
+
+        const cardHTML = `
+          <div class="igreja-card" data-igreja="${igreja.id}">
+            <div class="igreja-header">
+              <h3>${igreja.nome}</h3>
+            </div>
+            <div class="igreja-mapa">
+              <iframe 
+                src="${igreja.mapa}" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa da ${igreja.nome}"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="igreja-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info-item-content">
+                  <p>${igreja.endereco}</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div class="info-item-content horarios">
+                  <p><strong>Cultos:</strong></p>
+                  <ul>${horariosHTML}</ul>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-user-alt"></i>
+                <div class="info-item-content ministros">
+                  <p><strong>Ministros:</strong></p>
+                  <ul>${ministrosHTML}</ul>
+                </div>
+              </div>
+              <a href="${igreja.mapa}" target="_blank" class="rota-btn" aria-label="Ver rota para ${igreja.nome}">
+                <i class="fas fa-directions"></i> Ver Rota
+              </a>
+            </div>
+          </div>
+        `;
+        container.insertAdjacentHTML('beforeend', cardHTML);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Render inicial
+      renderizarIgrejas();
+
+      // --- Filtro de igrejas ---
+      const filtroBtns = document.querySelectorAll('.filtro-btn');
+      filtroBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filtroBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          renderizarIgrejas(this.dataset.igreja);
+        });
+      });
+
+      // --- Carrossel de eventos ---
+      let currentSlide = 0;
+      const carousel = document.querySelector('.carousel');
+      const slides = carousel ? carousel.querySelectorAll('.card') : [];
+      const totalSlides = slides.length;
+
+      function updateCarousel() {
+        if (!carousel || totalSlides === 0) return;
+        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        updateDots();
+      }
+
+      function updateDots() {
+        const dotsContainer = document.querySelector('.carousel-dots');
+        if (!dotsContainer) return;
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement('span');
+          dot.classList.add('dot');
+          dot.classList.toggle('active', i === currentSlide);
+          dot.addEventListener('click', () => { currentSlide = i; updateCarousel(); });
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function mudarSlide(direcao) {
+        if (totalSlides === 0) return;
+        currentSlide = (currentSlide + direcao + totalSlides) % totalSlides;
+        updateCarousel();
+      }
+
+      const prevBtn = document.querySelector('.prev');
+      const nextBtn = document.querySelector('.next');
+
+      if (prevBtn) prevBtn.addEventListener('click', () => mudarSlide(-1));
+      if (nextBtn) nextBtn.addEventListener('click', () => mudarSlide(1));
+
+      updateCarousel();
+
+      // Adição para auto-rotacionar carrossel
+      let intervalId;
+      function startAutoSlide() {
+        intervalId = setInterval(() => mudarSlide(1), 5000);
+      }
+
+      const carouselContainer = document.querySelector('.carousel-container');
+      if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', () => clearInterval(intervalId));
+        carouselContainer.addEventListener('mouseleave', startAutoSlide);
+        startAutoSlide();
+      }
+
+      // --- Botão voltar ao topo ---
+      const backToTopBtn = document.querySelector('.back-to-top');
+      window.addEventListener('scroll', () => {
+        if (!backToTopBtn) return;
+        backToTopBtn.classList.toggle('visible', window.pageYOffset > 300);
+      });
+
+      // --- Suavizar rolagem para âncoras e corrigir menu ativo ---
+      document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+          this.classList.add('active');
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            const navHeight = document.querySelector('nav').offsetHeight;
+            const elementPosition = targetId === '#home' ? 0 : targetElement.offsetTop - navHeight;
+            window.scrollTo({ top: elementPosition, behavior: 'smooth' });
+          }
+        });
+      });
+
+      // --- Menu ativo conforme rolagem ---
+      const sections = document.querySelectorAll('main, section');
+      const navLinks = document.querySelectorAll('nav a');
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navLinks.forEach(link => {
+              link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+            });
+          }
+        });
+      }, { threshold: 0.6 });
+
+      sections.forEach(section => observer.observe(section));
+
+      // Carregar imagens da timeline lazy e adicionar classe loaded
+      document.querySelectorAll('.timeline-img img').forEach(img => {
+        img.addEventListener('load', () => {
+          img.classList.add('loaded');
+          img.parentElement.classList.add('loaded');
+        });
+        if (img.complete) {
+          img.classList.add('loaded');
+          img.parentElement.classList.add('loaded');
+        }
+      });
+
+      // --- Fechar tooltip no mobile ao clicar fora ---
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.versiculo')) {
+          document.querySelectorAll('.tooltip').forEach(t => {
+            t.style.visibility = 'hidden';
+            t.style.opacity = '0';
+          });
+        }
+      });
+
+      // --- Efeito de scroll na navegação ---
+      window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
